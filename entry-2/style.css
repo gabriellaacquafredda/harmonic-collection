@@ -2,7 +2,7 @@ body{
     background-color:#E7E7D5;
     white-space: trim;
     margin:auto;
-    max-width: 1000px;
+    max-width: 950px;
 }
 
 p{
@@ -11,8 +11,9 @@ p{
     font-style: normal;
     font-variation-settings: "opsz" 24, "wght" 400;
     font-size: normal;
-    padding-top: 5 px;
-    padding-bottom: 5 px;
+    padding-top: 20 px;
+    padding-bottom: 20 px;
+    line-height: 20px;
 }
       div{
         color: #23356D;
@@ -34,16 +35,16 @@ p{
         color:#23356D;
         font-family:dupincel-variable, sans-serif;
         font-size:xx-large;
+        font-style:italic;
         white-space:trim;
-        font-style:normal;
+        text-align:center;
       }
       h3{
         color:#23356D;
         font-family:dupincel-variable, sans-serif;
         font-size:large;
         font-style:italic;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-bottom: 20px;
       }
       .subscript{
         color:#23356D;
@@ -56,6 +57,13 @@ p{
         font-family:dupincel-variable, sans-serif;
         font-size:small;
         font-style:normal;
+        text-align:center;
+      }
+      .subscript2i{
+        color:#23356D;
+        font-family:dupincel-variable, sans-serif;
+        font-size:small;
+        font-style:italic;
         text-align:center;
       }
       i {
@@ -100,22 +108,16 @@ p{
           text-decoration:line-through;
         }
 
-.thanks {
-  font-style: italic;
-  font-size: large;
-  padding-bottom: 8px;
-  }
-
   @keyframes grow {
     0% {
       font-size: initial;
     }
     
     100% {
-      font-size: 60px;
+      font-size: 80px;
     }
-  }
-  
+  } 
+
   .grow {
     animation-name: grow;
     animation-duration: 3s;
@@ -155,12 +157,40 @@ p{
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       }
+    }  
+      h1 {
+        font-size: smaller;  
+        transition: font-size 0.2s ease-in-out;
     }
-
-    .marqueelrc{
-      padding-inline-end: 35px;
+      input[type="range"] {
+        width: 80%;
+        margin-left: 70px;
+        background-color: #000000;
+        height: 1.5px;
+        appearance: none;
+        outline: none;
     }
-      
+    input[type="range"]::-webkit-slider-thumb {
+        background-color:#C22D2D;
+        width: 10px;
+        height: 10px;
+        appearance: none;
+        border: 1px solid #C22D2D;
+        border-radius: 50%;
+    } 
+.flexboximage {
+      display: flex;
+      align-items: right; /* Vertically center align items */
+    }
+    
+    img {
+      flex: 0 0 auto; /* Don't grow or shrink */
+      margin-right: 10px; /* Adjust spacing between image and text */
+    }
+    
+.images {
+  text-align:center;
+}
 footer{
   font-size:smaller;
   font-style: italic;

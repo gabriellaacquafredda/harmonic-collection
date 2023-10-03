@@ -1,96 +1,107 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="../style/reset.css"> 
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://use.typekit.net/ddu2wiq.css">
-    <title>printed matters</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ddu2wiq.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>printed matters</title>
 
-<!--want to add a breadcrumb list
-& a favicon for the tab. design a logo moving forward.-->
+  <!--want to add a breadcrumb list
+    & a favicon for the tab. design a logo moving forward.-->
+
 </head>
-
-<body> <div>
-    <div> <ul class="breadcrumbs">
-    <li class="breadcrumbs-item breadcrumbs-item1">
-        <a href="" class="breadcrumbs-link">printed matters</a></li>
-    <li class="breadcrumbs-item">
-        <a href="http://127.0.0.1:5500/entry-1/index.html" class="breadcrumbs-link">one</a></li>
-    <li class="breadcrumbs-item">
-        <a href="" class="breadcumbs-link breadcrumbs-link-active">two</a></li>
-    </ul> </div>  
-&nbsp;
-<h4 style="text-align:center;"><b>the written word<sup>*</sup></b></h4>
-<h3 style="text-align:center"><b><sup>*</sup>an abridged history</b></h3>
-&nbsp;
-<hr class="line">
-
-<div>
-  &nbsp;
-  <p class="thanks"> thank you for trusting me. </p>
-  <p> i realize there's still a great deal we don't know about eachother. you trusted me out of the goodness of your heart.
-      (or, perhaps, the sharpness of your wit.) either way, i won't forget this.</p>
-  &nbsp;
-  <p>now, my captive audience: words.</p>&nbsp;
-  <p>let's say it together.</p>
-
-  <div><p class="justincase"></p></div>
-<!--ask about this transistion in class! along with the placement of the javascript. 
-if js is not working, create a transistion here.-->
-
-    <span class="my-span">words!</span>
-    <p class="subscript">hover your mouse over the one above, please.</p>
-</div>
+<body>
+  <div>
+    <div>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item breadcrumbs-item1">
+          <a href="" class="breadcrumbs-link">printed matters</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="http://127.0.0.1:5500/entry-1/index.html" class="breadcrumbs-link">one</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="" class="breadcumbs-link breadcrumbs-link-active">two</a>
+        </li>
+      </ul>
+    </div>
+    &nbsp;
+    <h4>the matter at hand:</h4>
+    &nbsp;
+    <hr class="line">
+    <div>
+      &nbsp;
+      <p> thank you for trusting me. </p>
+      &nbsp;
+      <p> i realize there's still a great deal we don't know about eachother. you trusted me out of the goodness of your heart. (or, perhaps, the sharpness of your wit.) either way, i won't forget this.</p> 
+      &nbsp;
+      <p>now, the matter i promised: words.</p> 
+      &nbsp;
+      <p>let's say it together.</p>
+      <span class="my-span">words!</span>
+      <p class="subscript">hover your mouse over the one above, please.</p>
+    </div>
     &nbsp;
     <p>words, my dear reader, assisted you in doing that.</p>
-    <p>fundamentally, they are instructions. or more polietly, <i>requests.</i></p>
-    &nbsp;<p>if i asked you, dear reader, to read the following for me, i'm sure you would. </p>
-    
-    <div id="scroll-container">
-    <div id="scroll-text">
-<!--hoping to fix this. was too choppy for my tastes. temp. marquee is below.-->
-    <div>
-    </div></div></div>
-   
-
-    <div><marquee class="marqueelrc" direction="up" behavior="scroll-text" scrollamount="2.0">just this one.<br><br>
-    and this.<br><br>few more of those.<br><br>and these.</marquee>
-    <marquee class="marqueelrc" direction="up" behavior="scroll-text" scrollamount="3.6">this, too.<br><br>
-    and don't forget this.<br><br>it's no small feat.<br><br>this one.</marquee>
-    <marquee class="marqueelrc" direction="up" behavior="scroll-text" scrollamount="3.0">that one, there.<br><br>
-    and don't forget this.<br><br>they're all important.<br><br>i swear.</marquee>
-    <marquee class="marqueelrc" direction="up" behavior="scroll-text" scrollamount="2.6">object pronouns.<br><br>
-    that one's a thinker.<br><br>so is this one.<br><br>and that one, there.</marquee>
-    <marquee class="marqueelrc" direction="up" behavior="scroll-text" scrollamount="3.3">this, of course.<br><br>
-    and that.<br><br>naturally.<br><br>keeping up?</marquee>
-    <marquee class="marqueelrc" direction="up" behavior="scroll-text" scrollamount="1.4">don't forget this one.
-    <br><br>one more.<br><br>scratch that, two.<br><br>that's the one.</marquee></div>
+    <p>fundamentally, they are instructions: spiffy manuals that dictate the way we interact with the world; and the way that they are arranged and stylized impacts the way you interact with them.</p>
+    &nbsp;
+    <p>if i requested, for example, that you assist me in reading <i>(and sliding)</i> the following, i'm certain you could. </p>
+    &nbsp;
+    <div class="container">
+      <h1 id="text" style="text-align:center">left to right, just as you were taught.</h1>
+      <input type="range" id="fontSlider" min="20" max="50" value="20">
+    </div>
+  </div>
+  &nbsp;
+  <p>you could credit all of the above to 'basic literacy.' but such a phrase wouldn't be possible without the letterforms constructing it, no? not to mention the snide colloquialisms and double entendres kept warm between them. but we'll save the latter for later.</p>
+  &nbsp;
+  <p style="text-align:right"><i>for now, let's establish</i></p>
+  &nbsp;
+  <hr class="line">
+  &nbsp;
+  <h5>a grand & unabridged<sup>*</sup> history of the written word</h5>
+    <h3 style="text-align:center"><sup>*</sup>slightly abridged</h3>
+  <p>linguists and anthropologists find that spoken language developed around 35,000 BCE to cro-magnon people. this estimate, though just an estimate, is grounded by select cave-paintings from the period that depict hunting expeditions. their complexity suggests a narrative beyond that of stand-alone images, and by proxy, suggests the existence of viable spoken language.</p>
+  <div class="images">
+    <img src="images/image-1.jpg" alt="image 1"style="width:70%">
+  </div>
+  <p class="subscript2">artist's interpretation.</p>
+  &nbsp;
+  <p>formal written language, however, didn't turn up until 3500 BCE in ancient sumer, south mesopotamia.</p>
+  &nbsp;
+  <p>the sumerians invented a writing system in response to increased trade and the development of cities. they were in need of an efficient means to an end: a way to track goods and finances.</p>
+  &nbsp;
+  <p>(at the time, sumer was the center of a flourishing beer industry. many preserved writings from this period are just about beer. <i>beer is an excellent reason to develop an entire writing system.</i>)</p>
+  &nbsp;
+  <p>i hestitate to say that this system contained 'words,' though. what the sumerians initially created was word-adjacent: a system of illustrations, dubbed 'pictograms.' although amazing, they existed without nuance: they could communicate how many jars of beer were involved in a transaction, but not who the transaction was for.</p>
+  &nbsp;
+  <p>cue the invention of <i>cunneiform,</i> the sumerian 'phonograph' language, which translated sounds from local spoken language into representational letterforms. phonographs became the new written standard of communication; as they could not only detail who the reciever of beer was, but why they needed it, where it was coming from, and what made it worth purchasing. phonographs also gave way to shorthand, thus streamlining the communication process while sharpening it.</p>
+  <div class="images">
+    <img src="images/image-2.jpg" alt="image 2">
+  </div>
+  <p class="subscript2">this phrase, for instance, reads 'S W D B' in english. ie: <i class="subscript2i">save water, drink beer.</i></p>
+  &nbsp;
+  <p>with the flexible precision of phonograms, we really start talkin'. or writin', i suppose.</p>
+  &nbsp; <hr class="line">&nbsp;
+  <h3 style="text-align:center">and write we did!</h3>
+  <p>this is where the 'word as instruction manual' principle begins to take shape. the literate are valuable. they can record and renounce at will. they collaborate with craftsman to draft building plans, and cities grow. they allign themselves with religion, and spread the faith of their choice. they tell folks what is happening where, and with who, and why; all in a few strokes.</p>
+  &nbsp;
+  <p><i>the literate control the narrative.</i> and, as mesopotamian priestess enheduanna did, sculpt ones of their own.</p>
+  &nbsp;
+  <p>enheuanna was history's first vocational writer. (second to the priestesshood.) her earliest works were hymns addressed to local gods; but her first formal work was about the significance of the written word. she invented a story about a royal messenger who struggled to remember the details of his correspondences, and his leige had the idea to write them down. (so writing was born, according to enheuanna.) (she beat me to the punch on this 'writing about writing' thing.)</p>
+  <div class="images">
+    <img src="image-3.jpg" alt="image 3">
+  </div>
+  <p>she's this one.</p>
   
-      
-&nbsp;<p style="text-align:center">left to right, just as you were taught.</p>&nbsp;
-    <p>i suppose you could credit all of the above to 'basic literacy.' but such a phrase wouldn't be possible without the letterforms
-      constructing it, no? not to mention the snide colloquialisms and double entendres kept warm between them. but we'll save the latter.</p>
-    &nbsp;<p style="text-align:right"><i>for now, let's address</i></p>
-    &nbsp;<hr class="line">&nbsp;
-
-<h5>baby's first words</h5>
-    <p>are a milestone for any parent. and let it be known that the written word is very proud. and wealthy: rich in context and content.</p>
-    <p>linguists and anthropologists claim that spoken language was born around 35,000 BCE
-      (only 360,246 months old! and it's gotten so big already!) to cro-magnon men.
-      these early men painted very sophisticated pieces on their cave walls: depicting scenes with 
-      some kind of narrative; thus suggesting some kind of verbal communication to go along with it. </p>
-<!--add hand drawn image of early cave drawings.-->
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <p style="text-align:center"><b>PLACEHOLDER: DRAWN CAVE PAINTING</b></p>
-    <p class="subscript2">artist's interpretation.</p>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <p style="text-align:center"><b>PLACEHOLDER: INTENDING TO EXPAND IN NEXT ENTRY</p></b>
-
-<footer>
-    <p>printed matters<br>
-      two-thousand and twenty-three
+  
+  
+  <footer>
+    <p><i>printed matters</i><br>
+      two-thousand & twenty-three
     </p>
-</footer>
-
-<script src="script.js"></script>
-
-</div></body>
+  </footer>
+  <script src="script.js"></script>
+  </div>
+</body>
