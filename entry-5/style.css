@@ -1,0 +1,42 @@
+body {
+    background-color: #E7E7D5;
+    color: #23356D;
+    font-family: dupincel-variable,serif;
+    line-height: 1.35;
+    margin: auto;
+}
+    h4 {
+        font-size: xx-large;
+    }
+
+#asterisk {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 12%;
+    animation: spin 10s linear infinite;
+    left: 34.3%;
+    top: 24%;
+    transform-origin: center;
+    z-index: 4000;
+/* thank you to a peer tutor at the design lab for helping me with the z-index! i was stuck for an hour and a half... */
+}
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    #asterisk:hover {
+        transform: rotate(360deg);
+        transition: transform 0.3s ease-in-out;
+/*this is not working as intended...going to continue coding the content for this page on a secondary entry, and combine with help in-class.*/
+    }
+    
+.logo {
+    position: fixed;
+    align-items: center;
+    left: 12.7%;
+}

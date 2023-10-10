@@ -1,0 +1,74 @@
+body {
+    background-image:url('images/bg-1.png');
+    background-size: cover;
+    background-repeat: repeat;
+    animation: cycleBackground 5s linear infinite;
+    background-color: #23356D;
+    color: #E7E7D5;
+    opacity: 75%;
+    font-family: dupincel-variable,serif;
+    line-height: 1.35;
+    margin: auto;
+    padding: 0;
+    max-width: 1000px;
+}
+/* background animation */
+    .background-fade {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #E7E7D5;
+        animation: fadeInAnimation 1.5s forwards;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    } 
+    @keyframes cycleBackground {
+        0% {
+        background-image: url('images/bg-1.png');
+        }
+        17% {
+        background-image: url('images/bg-2.png');
+        }
+        34% {
+        background-image: url('images/bg-3.png');
+        }
+        51% {
+        background-image: url('images/bg-4.png');
+        }
+        68% {
+        background-image: url('images/bg-5.png');
+        }
+        85% {
+        background-image: url('images/bg-6.png');
+        }
+    }
+/* paragraphs */
+h4 {
+    font-size: x-large;
+    text-align: left;
+    padding-top: 50px;
+    max-width: 1000px;
+}
+    h4.links{
+        color: #E7E7D5;
+    }
+    h4.links a:hover{
+        font-style: italic;
+        opacity: 100%;
+    }
+h3{
+    font-size: medium;
+    font-style: italic;
+    text-align: left;
+    padding-left: 10px;
+    max-width: 1000px;
+}
