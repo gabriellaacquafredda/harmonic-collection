@@ -1,107 +1,103 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <link rel="stylesheet" href="../style/reset.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.typekit.net/ddu2wiq.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>printed matters</title>
-
-  <!--want to add a breadcrumb list
-    & a favicon for the tab. design a logo moving forward.-->
-
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ddu2wiq.css">
+    <link rel="icon" href="images/PM-FC2.png" type="image/png">
+    <title>printed matters</title>
 </head>
+
+<!-- navigation -->
 <body>
-  <div>
-    <div>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item breadcrumbs-item1">
-          <a href="" class="breadcrumbs-link">printed matters</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a href="http://127.0.0.1:5500/entry-1/index.html" class="breadcrumbs-link">one</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a href="" class="breadcumbs-link breadcrumbs-link-active">two</a>
-        </li>
-      </ul>
+  <nav>
+    <div class="dropdown">
+      <label for="touch"><img class="PM-droplogo" src="images/PM-droplogo.png" alt="Dropdown Trigger"></label>
+      <input type="checkbox" id="touch">
+      <div class="slide dropdown-content">
+        <ul class="nav-links"><a href="http://127.0.0.1:5500/entry-1/index.html" class="past">one: what is it & why does it matter?</a></ul>
+        <ul class="nav-links"><a href="" class="present">two: a complete & unabridged history</a></ul>
+      </div>
     </div>
-    &nbsp;
-    <h4>the matter at hand:</h4>
-    &nbsp;
-    <hr class="line">
-    <div>
-      &nbsp;
-      <p> thank you for trusting me. </p>
-      &nbsp;
-      <p> i realize there's still a great deal we don't know about eachother. you trusted me out of the goodness of your heart. (or, perhaps, the sharpness of your wit.) either way, i won't forget this.</p> 
-      &nbsp;
-      <p>now, the matter i promised: words.</p> 
-      &nbsp;
-      <p>let's say it together.</p>
-      <span class="my-span">words!</span>
-      <p class="subscript">hover your mouse over the one above, please.</p>
+  </nav>
+
+<!-- central logo -->
+<div class="PM-container">
+  <a href="http://127.0.0.1:5500/entry-5/index.html" class="flex-center">
+    <img class="logo" src="images/PM-logo.png" alt="PM-logo.png">
+  </a>
+</div>
+
+<!-- title -->
+<h4><i>the matter at hand:</i></h4>
+<hr class="line">
+
+<!-- central body -->
+<div>
+    <p> thank you for trusting me. </p> &nbsp;
+    <p> i realize there's still a great deal we don't know about each other. you trusted me out of the goodness of your heart. (or, perhaps, the sharpness of your wit.) either way, i won't forget this. now, the matter i promised: words.</p> &nbsp;
+    <p>let's say it together.</p>
+    <span class="my-span">words!</span>
+    <p class="subscript">hover your mouse over the one above, please.</p>
+</div> &nbsp;
+
+<p>words, my dear reader, assisted you in doing that. fundamentally, they are instructions: spiffy manuals that dictate the way we interact with the world; and the way that they are arranged and stylized impacts the way you interact with them.</p> &nbsp;
+    <p>if i requested, for example, that you assist me in reading <i>(and sliding)</i> the following, i'm certain you could.</p> &nbsp;
+
+<!-- slider -->
+<div class="container">
+    <h1 id="text" style="text-align:center">left to right, just as you were taught.</h1>
+    <input type="range" id="fontSlider" min="20" max="50" value="20">
+</div> &nbsp;
+
+<p>you could credit all of the above to 'basic literacy.' but such a phrase wouldn't be possible without the letterforms constructing it, no? not to mention the snide colloquialisms and double entendres kept warm between them. but we'll save the latter for later. <i>for now, let's establish</i></p>
+ 
+<!-- history-1 -->
+<hr class="line">
+    <h5>a grand & unabridged<sup>*</sup> history of the written word<sup>**</sup></h5>
+      <h3><sup>*</sup>slightly abridged</h3> &nbsp;
+      <h3><sup>**</sup>hover for context on <div class="popup-container"><button class="popup-trigger">loaded</button><div class="popup-content"><i>ie:</i> a word with several variable meanings (remember?)</div></div> ones</h3> &nbsp;
+
+&nbsp; <p>linguists and anthropologists claim that spoken language developed around 35,000 BCE to <span class="popup-container"><button class="popup-trigger">cro-magnon</button><span class="popup-content"><i>ie:</i> the earliest european humans</span></span> people. this estimate, though just an estimate, is grounded by select cave-paintings from the period that depict hunting expeditions. their complexity suggests a narrative beyond that of stand-alone images, and by proxy, suggests the existence of viable spoken language.</p>
+    <div class="images">
+    <img class="painting" src="images/image-1.jpg" alt="image 1">
     </div>
-    &nbsp;
-    <p>words, my dear reader, assisted you in doing that.</p>
-    <p>fundamentally, they are instructions: spiffy manuals that dictate the way we interact with the world; and the way that they are arranged and stylized impacts the way you interact with them.</p>
-    &nbsp;
-    <p>if i requested, for example, that you assist me in reading <i>(and sliding)</i> the following, i'm certain you could. </p>
-    &nbsp;
-    <div class="container">
-      <h1 id="text" style="text-align:center">left to right, just as you were taught.</h1>
-      <input type="range" id="fontSlider" min="20" max="50" value="20">
-    </div>
-  </div>
-  &nbsp;
-  <p>you could credit all of the above to 'basic literacy.' but such a phrase wouldn't be possible without the letterforms constructing it, no? not to mention the snide colloquialisms and double entendres kept warm between them. but we'll save the latter for later.</p>
-  &nbsp;
-  <p style="text-align:right"><i>for now, let's establish</i></p>
-  &nbsp;
-  <hr class="line">
-  &nbsp;
-  <h5>a grand & unabridged<sup>*</sup> history of the written word</h5>
-    <h3 style="text-align:center"><sup>*</sup>slightly abridged</h3>
-  <p>linguists and anthropologists find that spoken language developed around 35,000 BCE to cro-magnon people. this estimate, though just an estimate, is grounded by select cave-paintings from the period that depict hunting expeditions. their complexity suggests a narrative beyond that of stand-alone images, and by proxy, suggests the existence of viable spoken language.</p>
-  <div class="images">
-    <img src="images/image-1.jpg" alt="image 1"style="width:70%">
-  </div>
-  <p class="subscript2">artist's interpretation.</p>
-  &nbsp;
-  <p>formal written language, however, didn't turn up until 3500 BCE in ancient sumer, south mesopotamia.</p>
-  &nbsp;
-  <p>the sumerians invented a writing system in response to increased trade and the development of cities. they were in need of an efficient means to an end: a way to track goods and finances.</p>
-  &nbsp;
-  <p>(at the time, sumer was the center of a flourishing beer industry. many preserved writings from this period are just about beer. <i>beer is an excellent reason to develop an entire writing system.</i>)</p>
-  &nbsp;
-  <p>i hestitate to say that this system contained 'words,' though. what the sumerians initially created was word-adjacent: a system of illustrations, dubbed 'pictograms.' although amazing, they existed without nuance: they could communicate how many jars of beer were involved in a transaction, but not who the transaction was for.</p>
-  &nbsp;
-  <p>cue the invention of <i>cunneiform,</i> the sumerian 'phonograph' language, which translated sounds from local spoken language into representational letterforms. phonographs became the new written standard of communication; as they could not only detail who the reciever of beer was, but why they needed it, where it was coming from, and what made it worth purchasing. phonographs also gave way to shorthand, thus streamlining the communication process while sharpening it.</p>
+    <p class="subscript2B">artist's interpretation.</p> &nbsp;
+
+<p>formal written language, however, didn't turn up until 3500 BCE in ancient <span class="popup-container"><button class="popup-trigger">sumer,</button><span class="popup-content"><i>ie:</i> earliest known civilization</span></span> south mesopotamia. the sumerians invented a writing system in response to increased trade and the development of cities. they were in need of an efficient means to an end: a way to track goods and finances.</p> &nbsp;
+    <p>(at the time, sumer was the center of a flourishing beer industry. many preserved writings from this period are just about beer. <i>beer is an excellent reason to develop an entire writing system.</i>)</p> &nbsp;
+    <p>i hesitate to say that this system contained 'words,' though. what the sumerians initially created was word-adjacent: a system of illustrations, dubbed <span class="popup-container"><button class="popup-trigger">'pictograms.'</button><span class="popup-content"><i>and/or:</i> pictographs, pictogrammes, pictos (now glyphs, emojis)</span></span> although amazing, they existed without nuance: they could communicate how many jars of beer were involved in a transaction, but not who the transaction was for. </p>  &nbsp;
+    <p>cue the invention of <i>cuneiform,</i> the sumerian 'phonograph' language, which translated sounds from local spoken language into representational letterforms. phonographs became the new written standard of communication; as they could not only detail who the receiver of beer was, but why they needed it, where it was coming from, and what made it worth purchasing. phonographs also gave way to shorthand, thus streamlining the communication process while sharpening it.</p>
+  
   <div class="images">
     <img src="images/image-2.jpg" alt="image 2">
   </div>
-  <p class="subscript2">this phrase, for instance, reads 'S W D B' in english. ie: <i class="subscript2i">save water, drink beer.</i></p>
+  <p class="subscript2">this phrase, for instance, reads 'S W D B' in english. that's for <i class="subscript2i">'save water, drink beer.'</i></p>
   &nbsp;
-  <p>with the flexible precision of phonograms, we really start talkin'. or writin', i suppose.</p>
-  &nbsp; <hr class="line">&nbsp;
-  <h3 style="text-align:center">and write we did!</h3>
-  <p>this is where the 'word as instruction manual' principle begins to take shape. the literate are valuable. they can record and renounce at will. they collaborate with craftsman to draft building plans, and cities grow. they allign themselves with religion, and spread the faith of their choice. they tell folks what is happening where, and with who, and why; all in a few strokes.</p>
-  &nbsp;
-  <p><i>the literate control the narrative.</i> and, as mesopotamian priestess enheduanna did, sculpt ones of their own.</p>
-  &nbsp;
-  <p>enheuanna was history's first vocational writer. (second to the priestesshood.) her earliest works were hymns addressed to local gods; but her first formal work was about the significance of the written word. she invented a story about a royal messenger who struggled to remember the details of his correspondences, and his leige had the idea to write them down. (so writing was born, according to enheuanna.) (she beat me to the punch on this 'writing about writing' thing.)</p>
-  <div class="images">
-    <img src="image-3.jpg" alt="image 3">
-  </div>
-  <p>she's this one.</p>
-  
-  
-  
-  <footer>
-    <p><i>printed matters</i><br>
-      two-thousand & twenty-three
-    </p>
-  </footer>
-  <script src="script.js"></script>
-  </div>
-</body>
+  <p style="text-align: center">with the flexible precision of phonograms, we really start talkin'. <i>or writin',</i> i suppose.</p>
+
+<!-- history-2 -->
+<hr class="line">
+<h5>and write we did!</h5> &nbsp;
+    <p>this is where the 'word as instruction manual' principle begins to take shape. the literate are valuable. they can record and renounce at will. they collaborate with craftsman to draft building plans, and cities grow. they align themselves with <span class="popup-container"><button class="popup-trigger">religion,</button><span class="popup-content"><i>eg:</i> catholic clergymen controlling the narrative within the holy bible</span></span> and spread the faith of their choice. they tell folks what is happening where, and with who, and why; all in a few strokes.</p> &nbsp;
+    <p><i>the literate control the narrative.</i> and, as mesopotamian priestess enheduanna did, sculpt ones of their own.</p> &nbsp;
+    <p><span class="popup-container"><button class="popup-trigger">enheduanna</button><span class="popup-content"><i>ie:</i> daughter of sumerian ruler <i>sargon of akkad</i></span></span> was history's first vocational writer. her earliest works were hymns addressed to local gods; but her first formal work was about the significance of the written word. she invented a story about a royal messenger who struggled to remember the details of his correspondences, and his liege had the idea to write them down. (so writing was born, according to enheduanna.) (she beat me to the punch on this 'writing about writing' thing.)</p>
+
+<div class="images">
+    <img src="images/image-3.jpg" alt="image 3" class="image-3">
+</div>
+    <span class="context">she's this one.</span>
+
+<p>after her works, the scope of stories grew tenfold: to <span class="popup-container"><button class="popup-trigger"><i>epic</i></button><span class="popup-content"><i>(haha)</i></span></span> proportions. along came <span class="popup-container"><button class="popup-trigger">gilgamesh,</button><span class="popup-content"><i>ie:</i> among the oldest stories on earth, originally written on twelve sumerian tablets </span></span> with shaky translations by <span class="popup-container"><button class="popup-trigger">shin-legi-unninni,</button><span class="popup-content"><i>of mesopotamia</i></span></span> and <span class="popup-container"><button class="popup-trigger">homer</button><span class="popup-content"><i>of greece</i></span></span> and <span class="popup-container"><button class="popup-trigger">virgil,</button><span class="popup-content"><i>of rome</i></span></span> which became solid translations per the <span class="popup-container"><button class="popup-trigger"><i>phonecians,</i></button><span class="popup-content"><i>ie:</i> early mediterranean peoples</span></span><i></i> who, among other things, created the alphabet as we know it today. now epic tales like gilgamesh could be relayed more universally, and much faster than with pictographs or phonographs.</p> &nbsp;
+<p>alphabet. <i>now we're writin'.</i></p> &nbsp;
+    <p>and we wrote all sorts of things, with all sorts of funny apendages. cut reeds and clay tablets for some, and pin-reeds and papyrus for others, plus a slew of psuedo-languages to go with them: all 'alphabetical,' sure, as in 'alpha, beta,' in semitic terms, or 'aleph, beth,' in hebrew ones, or 'a, b, c, d,' all sung to the tune of 'twinkle twinkle little star,' or '01100001 00100000 01100010 00100000 01100011 00100000 01100100' in binary, which is both a language <i>and</i> a writing implement of it's own, when you think about it.</p> &nbsp;
+    <p>we've all got writing fever. some are better than others. think voltaire, shakespeare, dostoevsky, tolstoy, hemingway, ginsberg, brontë (both of them,) woolf, didion, vonnegut, alcott, morrison, plath...acquafredda...those are the good ones. (one of these is not like the other. but maybe with a little practice, they will be.)</p> &nbsp;
+    <p>the truth is, once we established widespread literacy, proper writing utensils, and an alphabet, good career writers were bound to crop up. and now that we've got wordprocessors and codes that can transmit words through cyberspace and beyond, great ones are beginning to <a href="http://127.0.0.1:5500/entry-3/index.html" class="next">color</a> our understandings of language.</p>
+
+<!-- end content -->
+<footer>
+    <a class="footer-link" href="http://127.0.0.1:5500/entry-5/index.html">
+    <p>pm</a></p> &nbsp;
+</footer>
+<script src="script.js"></script>
+</body></html>

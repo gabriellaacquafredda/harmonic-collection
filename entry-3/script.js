@@ -1,3 +1,4 @@
+// slides
 var slidePosition = 1;
 showSlides(slidePosition);
 function plusSlides(n) {
@@ -6,7 +7,6 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides((slidePosition = n));
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("Containers");
@@ -23,28 +23,24 @@ function showSlides(n) {
 }
 showSlides(slidePosition);
 
-// Get references to the necessary elements IN
 const forwardButton = document.getElementById('forward');
-const slides = document.querySelectorAll('.Containers'); // Change this selector to match your slide elements
+const slides = document.querySelectorAll('.Containers'); 
 
-// Initialize a variable to keep track of the current slide index
 let currentSlideIndex = 0;
 
-// Function to check if the current slide is the last one
 function isLastSlide() {
   return currentSlideIndex === slides.length - 1;
 }
 
-// Function to hide/show the forward button based on the current slide
 function updateForwardButtonVisibility() {
   if (isLastSlide()) {
-    forwardButton.style.display = 'none'; // Hide the button
+    forwardButton.style.display = 'none'; 
   } else {
-    forwardButton.style.display = 'block'; // Show the button
+    forwardButton.style.display = 'block'; 
   }
 }
 
-// Function to navigate to the next slide
+// navigation
 function nextSlide() {
   if (!isLastSlide()) {
     currentSlideIndex++;
@@ -54,9 +50,7 @@ function nextSlide() {
   }
 }
 
-// Event listener for the forward button click
 forwardButton.addEventListener('click', nextSlide);
 
-// Initial visibility setup
 updateForwardButtonVisibility();
 
