@@ -61,7 +61,6 @@ body {
     top: 50px;
     left: 50px;
     animation: reveal 7s forwards;
-    /* add these for texture */
     opacity: 0;
     animation-delay: 1s;
 }
@@ -295,7 +294,7 @@ body {
 
 .pop-container{
     z-index: -1000;
-    overflow: scroll;
+    max-height: 3280px;
 }
 
 @keyframes reveal {
