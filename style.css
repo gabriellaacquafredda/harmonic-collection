@@ -1,0 +1,334 @@
+/* general */
+body {
+    background-color: #E7E7D5;
+    color: #23356D;
+    font-family: dupincel-variable,serif;
+    line-height: 1.35;
+    margin: 0 auto;
+}
+    h4 {
+        font-size: xx-large;
+    }
+
+.background-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fadeInAnimation 1.5s forwards;
+}
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    } 
+
+/* logo/link */
+#asterisk {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 12%;
+    animation: spin 10s linear infinite;
+    left: 34.3%;
+    top: 24%;
+    transform-origin: center;
+    z-index: 4000;
+
+}
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    #asterisk:hover {
+        transform: rotate(360deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
+/* gallery */
+#pop-1 {
+    display: block;
+    position: relative;
+    width: 20%;
+    top: 50px;
+    left: 50px;
+    animation: reveal 7s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+#pop-2 {
+    display: block;
+    position: relative;
+    width: 10%;
+    top: 80px;
+    left: 1000px;
+    animation: reveal 4s forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+#pop-3 {
+    display: block;
+    position: relative;
+    width: 10%;
+    top: 55px;
+    left: 320px;
+    animation: reveal 6s forwards;
+    opacity: 0;
+    animation-delay: .5s;
+    z-index: 1;
+}
+
+#pop-4 {
+    display: block;
+    position: relative;
+    width: 20%;
+    top: 130px;
+    left: 1000px;
+    animation: reveal 5s forwards;
+    opacity: 0;
+    animation-delay: .7s;
+    z-index: 1;
+}
+
+#pop-5 {
+    display: block;
+    position: relative;
+    width: 17%;
+    top: -350px;
+    left: 700px;
+    bottom: 100px;
+    animation: reveal 8s forwards;
+    opacity: 0;
+    animation-delay: .9s;
+}
+
+#pop-6 {
+    display: block;
+    position: relative;
+    width: 22%;
+    top: -1050px;
+    left: 1060px;
+    animation: reveal 4s forwards;
+    z-index: -1;
+    opacity: 0;
+    animation-delay: .3s;
+}
+
+#pop-7 {
+    display: block;
+    position: relative;
+    width: 30%;
+    top: -1000px;
+    left: 100px;
+    animation: reveal 6s forwards;
+    opacity: 0;
+    animation-delay: 1.8s;
+}
+
+#pop-8 {
+    display: block;
+    position: relative;
+    width: 15%;
+    top: -1400px;
+    left: 600px;
+    animation: reveal 5s forwards;
+    opacity: 0;
+    animation-delay: 3s;
+    z-index: 1;
+}
+
+#pop-9 {
+    display: block;
+    position: relative;
+    width: 11.5%;
+    top: -2300px;
+    left: 680px;
+    animation: reveal 4s forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
+#pop-10 {
+    display: block;
+    position: relative;
+    width: 20%;
+    top: -2400px;
+    left: 150px;
+    animation: reveal 10s forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+#pop-11 {
+    display: block;
+    position: relative;
+    top: -2000px;
+    left: 800px;
+    animation: reveal 5s forwards;
+    opacity: 0;
+    animation-delay: 3s;
+}
+
+#pop-12 {
+    display: block;
+    position: relative;
+    width: 15%;
+    top: -2500px;
+    left: 1150px;
+    animation: reveal 8s forwards;
+    opacity: 0;
+    animation-delay: 3;
+    z-index: 2;
+}
+
+#pop-13 {
+    display: block;
+    position: relative;
+    width: 18%;
+    top: -2400px;
+    animation: reveal 5s forwards;
+    opacity: 0;
+    animation-delay: 4s;
+}
+
+#pop-14 {
+    display: block;
+    position: relative;
+    width: 20%;
+    top: -2600px;
+    left: 690px;
+    animation: reveal 6s forwards;
+    opacity: 0;
+    animation-delay: 2s;
+    z-index: 1;
+
+}
+
+#pop-15 {
+    display: block;
+    position: relative;
+    width: 10%;
+    top: -3100px;
+    left: 1080px;
+    animation: reveal 9s forwards;
+    opacity: 0;
+    animation-delay: 5s;
+}
+
+#pop-16 {
+    display: block;
+    position: relative;
+    width: 18%;
+    top: -3100px;
+    left: 80px;
+    animation: reveal 6.5s forwards;
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+
+#pop-17 {
+    display: block;
+    position: relative;
+    width: 17%;
+    top: -3100px;
+    left: 900px;
+    animation: reveal 7s forwards;
+    opacity: 0;
+    animation-delay: 3.5s;
+}
+
+#pop-18 {
+    display: block;
+    position: relative;
+    width: 15%;
+    top: -3800px;
+    left: 270px;
+    animation: reveal 4.5s forwards;
+    opacity: 0;
+    animation-delay: 4s;
+}
+
+#pop-19 {
+    display: block;
+    position: relative;
+    width: 11%;
+    top: -3870px;
+    left: 400px;
+    animation: reveal 5s forwards;
+    opacity: 0;
+    animation-delay: 4.3s;
+    z-index: 1;
+}
+
+#pop-20 {
+    display: block;
+    position: relative;
+    width: 20%;
+    top: -4100px;
+    left: 1300px;
+    animation: reveal 3.5s forwards;
+    opacity: 0;
+    animation-delay: 2.3s;
+}
+
+#pop-21 {
+    display: block;
+    position: relative;
+    width: 13%;
+    top: -4000px;
+    left: 130px;
+    animation: reveal 3s forwards;
+    opacity: 0;
+    animation-delay: 5s;
+}
+
+.pop-container{
+    z-index: -1000;
+    max-height: 3280px;
+}
+
+@keyframes reveal {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+.logo {
+    position: absolute;
+    align-items: center;
+    left: 12.7%;
+}
+
+/* footer */
+footer {
+    font-size: smaller;
+    text-align: center;
+    color: #23356D;
+    bottom: 10px;
+  }
+  
+  .footer-link:hover{
+    font-style: italic;
+    color: #9D141F;
+  }
+  
+  .next{
+    color: #9D141F;
+  }
+  
+  .next:hover{
+    font-style: italic;
+    color: #9D141F;
+  }

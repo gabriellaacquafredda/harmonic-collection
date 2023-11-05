@@ -1,74 +1,74 @@
-body{
+body {
     background-color: #E7E7D5;
     color: #23356D;
     font-family: dupincel-variable,serif;
     line-height: 1.35;
-    margin: auto;
-    max-width: 1200px;
+    max-height: 500px;
 }
-h3{
+
+h3 {
     font-size: x-large;
 }
 
 h4 {
     font-size: large;
 }
-.bigi{
+
+.center {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.bigi {
     font-style: italic;
 }
-.subscript{
+
+.subscript {
     font-size: smaller;
     font-style: italic;
 }
-.line{
+
+.line {
     border-top: 1.5px solid #000;
     padding-bottom: 30px;
 }
 
-/* hover reveals */
-.hov-container {
-    position: relative;
-    width: 500px;
-    display: flex;
-    margin-top: -600px;
-}
-
+/* reveals */
 .hov-div {
     position: relative;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: 500px;
+    height: 100px;
+    margin-left: 120px;
+    margin-top: 150px;
 }
 
 .hov-reveal {
     opacity: 0; 
-    position: absolute;
-    top: 0;
-    left: 0; 
     transition: opacity 1s ease;
+    position: absolute;
 }
 
 .hov-div.show-text .hov-reveal {
     opacity: 1;
 }
 
-.hov-container2 {
-    position: relative;
-    width: 500px;
-    display: flex;
-    margin-top: -600px;
-}
-
 .hov-div2 {
     position: relative;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: 310px;
+    height: 100px;
+    margin-top: -150px;
+    left: 950px;
+    z-index: 10;
 }
 
 .hov-reveal2 {
     opacity: 0; 
     position: absolute;
-    top: 100px;
-    left: 100px; 
     transition: opacity 1s ease;
 }
 
@@ -76,18 +76,66 @@ h4 {
     opacity: 1;
 }
 
+.hov-div3 {
+    position: relative;
+    width: 350px;
+    height: 100px;
+    left: 600px;
+    top: 200px;
+}
+
+.hov-reveal3 {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hov-div3.show-text .hov-reveal3 {
+    opacity: 1;
+}
+
+.hov-div4 {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    left: 770px;
+    top: 200px;
+}
+
+.hov-reveal4 {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hov-div4.show-text .hov-reveal4 {
+    opacity: 1;
+}
+
+.hov-div5 {
+    position: relative;
+    width: 15%;
+    height: 15%;
+    left: 75px; 
+    margin-top: 10px;
+}
+
+.hov-reveal5 {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hov-div5.show-text .hov-reveal5 {
+    opacity: 1;
+}
 /* instructions */
 .inst-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    position: absolute;
+    top: 355px;
+    left: 575px;
+    z-index: 10;
 }
 
 .inst {
-    text-align: center;
-    display: block;
-    position: relative;
     animation: reveal 3.5s forwards;
     opacity: 0;
     animation-delay: .3s;
@@ -104,3 +152,26 @@ h4 {
         opactiy: 0;
     }
 }
+
+/* next page */
+.next {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: transform 0.5s;
+  }
+  
+  .animated {
+    animation-name: move-on;
+    animation-duration: 2s;
+  }
+  
+  @keyframes move-on {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
