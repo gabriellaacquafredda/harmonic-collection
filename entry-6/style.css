@@ -126,6 +126,7 @@ h4 {
 .hov-div5.show-text .hov-reveal5 {
     opacity: 1;
 }
+
 /* instructions */
 .inst-container {
     display: flex;
@@ -153,25 +154,17 @@ h4 {
     }
 }
 
-/* next page */
+/* continue */
 .next {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
-    transition: transform 0.5s;
+    font-style: italic;
+    text-align: right;
+    display: flex;
+    position: absolute;
+    left: 1300px;
+    top: 650px;
   }
-  
-  .animated {
-    animation-name: move-on;
-    animation-duration: 2s;
-  }
-  
-  @keyframes move-on {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-  }
-  
+
+#final-reveal {
+    display: none;
+    transition: 1s ease;
+}
