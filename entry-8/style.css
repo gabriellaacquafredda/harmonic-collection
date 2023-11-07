@@ -281,12 +281,13 @@ ul.nav-links a:hover{
 }
 
 /* wyatt */
-.wyatt {
-    display: flex;
+.wyatt-container {
+    display: block;
     position: absolute;
 }
 .wyatt-1 {
     display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -296,6 +297,7 @@ ul.nav-links a:hover{
 
 .wyatt-2 {
     display: flex;
+    /* position: relative; */
     width: 30%;
     height: 30%;
     left: 200px;
@@ -305,6 +307,7 @@ ul.nav-links a:hover{
 
 .wyatt-3 {
     display: flex;
+    position: relative;
     width: 20%;
     height: 20%;
     margin-left: 500px;
@@ -313,5 +316,52 @@ ul.nav-links a:hover{
 }
 
 .wyatt-4 {
-    
+    display: flex;
+    position: relative;
+    width: 15%;
+    height: 15%;
+    margin-left: 850px;
+    margin-top: -300px;
+}
+
+/* .wyatt-5 {
+    display: flex;
+    position: relative;
+    width: 20%;
+    height: 20%;
+    margin-left: 20px;
+    margin-top: -50px;
+} */
+
+.wyatt-text-container {
+    position: relative;
+    height: 50vh;
+    top: 498px;
+}
+
+.hughjackman {
+    display: flex;
+    position: relative;
+    font-size: 130px;
+    font-style: normal;
+    text-align: center;
+    color: #9D141F;
+}
+.hughjackman:hover {
+    font-style: italic;
+    color: #9D141F; 
+}
+
+/* footer */
+footer {
+    margin-top: 500px;
+	font-size: smaller;
+	text-align: center;
+	color: #23356D;
+	padding-top: 10px;
+}
+
+.footer-link:hover{
+  font-style: italic;
+  color: #9D141F;
 }
