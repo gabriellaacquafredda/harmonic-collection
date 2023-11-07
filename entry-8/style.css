@@ -128,3 +128,154 @@ ul.nav-links a:hover{
     margin-bottom: -25px;
     max-inline-size: 30%
 }
+
+/* summary */
+.cont-1 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -70px;
+    height: 10vh;
+  }
+
+.cont-2 {
+    display: flex;
+    /* margin-top: 30px; */
+    margin-left: 120px;
+    height: 10vh;
+    position: relative;
+}
+
+.cont-3 {
+    display: flex;
+    margin-left: 380px;
+    margin-top: -100px;
+    height: 30vh;
+    position: relative;
+}
+
+.cont-4 {
+    display: flex;
+    margin-left: 660px;
+    margin-top: -250px;
+    height: 30vh;
+    position: relative;
+}
+
+.cont-5 {
+    display: flex;
+    margin-left: 930px;
+    margin-top: -200px;
+    height: 30vh;
+    width: 50px;
+    position: relative;
+
+}
+  
+.text {
+    font-size: x-large;
+    position: relative;
+    cursor: pointer;
+    transition: font-size 0.5s;
+    width: 250px;
+}
+  
+.rev {
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: large;
+}
+  
+.text:hover {
+    font-size: 30px;
+    font-style: italic;
+}
+  
+.text:hover .rev {
+    display: block;
+    animation: ease-in-out;
+}
+
+/* summary image reveals */
+.hidden-image {
+    display: flex;
+    width: 60%;
+    z-index: 1;
+}
+
+.hidden-image-m1 {
+    display: flex;
+    width: 50%;
+    margin-top: -200px;
+    margin-left: 75px;
+}
+
+.hidden-image-m2 {
+    display: flex;
+    width: 40%;
+    margin-top: -20px;
+    margin-left: -30px;
+}
+
+.hidden-image-m3 {
+    display: flex;
+    width: 50%;
+    margin-top: -100px;
+    margin-left: 60px;
+    transform: rotate(10deg);
+}
+
+.hidden-image-m4 {
+    display: flex;
+    width: 80%;
+}
+
+.hidden-image-m5 {
+    display: flex;
+    width: 50%;
+    margin-top: -175px;
+    margin-left: 80px;
+    transform: rotate(-10deg);
+}
+
+.hidden-image-m6 {
+    display: flex;
+    width: 50%;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.hidden-image-m7 {
+    display: flex;
+    width: 50%;
+    margin-top: -20px;
+    transform: rotate(15deg);
+}
+
+.hidden-image-m8 {
+    display: flex;
+    width: 70%;
+}
+
+.imgcontainer {
+    display: none; 
+}
+
+.imgcontainer.show {
+    display: block;
+}
+
+/* resume text */
+.giant-div {
+    display: block;
+    position: absolute;
+}
+.resumed {
+    /* display: flex; */
+    position: relative;
+    height: 50vh;
+    top: 475px;
+}
