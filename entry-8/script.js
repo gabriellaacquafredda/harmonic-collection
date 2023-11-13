@@ -1,37 +1,4 @@
-// summary image reveals... failed scripts
-// document.addEventListener('DOMContentLoaded', function() {
-//     const text = document.querySelector('.text');
-//     const rev = document.querySelector('.rev');
-//     const hiddenImages1 = document.querySelectorAll('.hidden-image1');
-//     const hiddenImages2 = document.querySelectorAll('.hidden-image2');
-
-//     text.addEventListener('mouseover', function() {
-//       rev.style.display = 'block';
-//       hiddenImages1.forEach(image => {
-//         image.style.display = 'none';
-
-//       });
-//       rev.style.display = 'block';
-//       hiddenImages2.forEach(image => {
-//         image.style.display = 'none';
-
-//       });
-//     });
-
-//     text.addEventListener('mouseout', function() {
-//       rev.style.display = 'block';
-//       hiddenImages1.forEach(image => {
-//         image.style.display = 'block';
-//       });
-//       rev.style.display = 'block';
-//       hiddenImages2.forEach(image => {
-//         image.style.display = 'block';
-//       });
-//     });
-//   });
-
-
-// summary image reveals...success!
+// summary image reveals
 document.addEventListener('DOMContentLoaded', function() {
     const texts = document.querySelectorAll('.text');
 
