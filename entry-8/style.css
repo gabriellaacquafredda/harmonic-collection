@@ -135,8 +135,8 @@ ul.nav-links a:hover{
 /* summary */
 .cont-1 {
     display: flex;
-    margin-top: 10px;
-    margin-left: -70px;
+    margin-top: 20px;
+    margin-left: -80px;
     height: 10vh;
   }
 
@@ -166,10 +166,10 @@ ul.nav-links a:hover{
 
 .cont-5 {
     display: flex;
-    margin-left: 930px;
+    margin-left: 940px;
     margin-top: -200px;
     height: 30vh;
-    width: 50px;
+    width: 160px;
     position: relative;
 
 }
@@ -186,6 +186,7 @@ ul.nav-links a:hover{
     top: 100%;
     left: 0;
     padding: 10px;
+/* need to adjust this width for text & images */
     width: 250px;
     border-radius: 5px;
     font-style: normal;
@@ -496,11 +497,10 @@ ul.nav-links a:hover{
 
 /* footer */
 footer {
-    /* margin-top: 500px; */
 	font-size: smaller;
 	text-align: center;
 	color: #23356D;
-	/* padding-top: 10px; */
+	padding-top: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
