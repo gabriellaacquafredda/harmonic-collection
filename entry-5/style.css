@@ -5,6 +5,8 @@ body {
     font-family: dupincel-variable,serif;
     line-height: 1.35;
     margin: 0 auto;
+    width: 1200px;
+    overflow-x: hidden;
 }
     h4 {
         font-size: xx-large;
@@ -293,7 +295,6 @@ body {
 }
 
 .pop-container{
-    z-index: -1000;
     max-height: 3280px;
 }
 
