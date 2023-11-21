@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var print7Element = document.getElementById('print-7');
     var print8Element = document.getElementById('print-8');
     var print9Element = document.getElementById('print-9');
-    var antElement = document.getElementById('ant');
+    var print10Element = document.getElementById('print-10');
     var dogsElement = document.getElementById('dogs');
     var bunnyElement = document.getElementById('bunny');
 
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showPrint7();
             showPrint8();
             showPrint9();
-            showAnt();
+            showPrint10();
             showDogs();
             showBunny();
 
@@ -98,14 +98,14 @@ document.addEventListener('DOMContentLoaded', function() {
             hidePrint2();
             hidePrint3();
             hidePrint4();
-            showPrint5();
-            showPrint6();
-            showPrint7();
-            showPrint8();
-            showPrint9();
-            showant();
-            showDogs();
-            showBunny();
+            hidePrint5();
+            hidePrint6();
+            hidePrint7();
+            hidePrint8();
+            hidePrint9();
+            hidePrint10();
+            hideDogs();
+            hideBunny();
 
             localStorage.setItem('detailsActive', 'false');
         }
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
         print7Element.style.display = 'flex';
         print8Element.style.display = 'flex';
         print9Element.style.display = 'flex';
-        antElement.style.display = 'flex';
+        print10Element.style.display = 'flex';
         dogsElement.style.display = 'flex';
         bunnyElement.style.display = 'flex';
     }
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         print7Element.style.display = 'none';
         print8Element.style.display = 'none';
         print9Element.style.display = 'none';
-        antElement.style.display = 'none';
+        print10Element.style.display = 'none';
         dogsElement.style.display = 'none';
         bunnyElement.style.display = 'none';
     }
