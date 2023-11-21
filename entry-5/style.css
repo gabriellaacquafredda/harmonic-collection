@@ -57,7 +57,7 @@ body {
 
 /* gallery */
 #pop-1 {
-    display: block;
+    display: flex;
     position: relative;
     width: 20%;
     top: 50px;

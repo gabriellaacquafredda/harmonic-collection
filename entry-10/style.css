@@ -1,4 +1,9 @@
 /*text standards*/
+.biggen{
+    background-color: #E7E7D5;
+    max-width: 100%;
+}
+
 .gen {
     background-color: #E7E7D5;
     color: #23356D;
@@ -7,7 +12,7 @@
     margin: auto;
     max-width: 1000px;
     /* TEMP: change when more text is added */
-    min-height: 500vh;
+    min-height: 200vh;
 }
 
 .finale {
@@ -17,9 +22,9 @@
     line-height: normal;
     padding-top: 20px;
     height: 100vh;
-    width: 1439px;
+    max-width: 1439px;
     position: relative;
-    right: 219px;
+    left: 0;
 }
 
 .finale-content{
@@ -92,6 +97,11 @@ i {
     font-style: italic; 
     text-align: center;
 }
+
+.fixed {
+    padding-top: 100px;
+    margin-bottom: -30px;
+}
   
 .subscript2 {
       font-size: smaller;
@@ -104,6 +114,7 @@ i {
     border-top: 1.5px solid #000;
     margin-top: 20px;
     margin-bottom: 20px;
+    z-index: -10;
 }
 
 .line2 {
@@ -139,7 +150,7 @@ div::after {
 }
     
 .slide ul {padding : 10px;}
-#touch {position: absolute; opacity: 0%; height: 0px;}    
+#touch {position: relative; opacity: 0%; height: 0px;}    
 #touch:checked + .slide {height: 320px;} 
     
 .PM-droplogo{
@@ -180,19 +191,145 @@ ul.nav-links a:hover{
 }
 
 /* print gallery */
+.print-gallery{
+    display: block;
+}
+
 #print-1 {
-    display: flex;
+    display: none;
     position: relative;
-    width: 15%;
-    margin-top: -250px;
-    margin-left: -90px;
-    animation: reveal 5s forwards;
+    width: 10%;
+    top: 30px;
+    left: 35px;
+    animation: reveal 3s forwards;
+    animation-delay: 1s;
     opacity: 0;
-    animation-delay: .5s;
     z-index: 1;
 }
 
+#print-2 {
+    display: none;
+    position: relative;
+    width: 15%;
+    top: -300px;
+    left: 800px;
+    animation: reveal 3s forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
 
+#print-3 {
+    display: none;
+    position: relative;
+    width: 13%;
+    top: -660px;
+    left: 950px;
+    animation: reveal 3s forwards;
+    animation-delay: .3s;
+    opacity: 0;
+}
+
+#print-4{
+    display: flex;
+    position: relative;
+    width: 10%;
+    top: -570px;
+    left: 400px;
+    animation: reveal 3s forwards;
+    animation-delay: .5s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#print-5 {
+    display: flex;
+    position: relative;
+    width: 15%;
+    top: -1000px;
+    left: 300px;
+    animation: reveal 3s forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+
+#print-6 {
+    display: flex;
+    position: relative;
+    width: 10%;
+    transform: rotate(90deg);
+    top: -950px;
+    left: 100px;
+    animation: reveal 3s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+#print-7 {
+    display: flex;
+    position: relative;
+    width: 15%;
+    top: -1400px;
+    left: 1200px;
+    animation: reveal 3s forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+#print-8 {
+    display: flex;
+    position: relative;
+    width: 10%;
+    top: -1490px;
+    left: 860px;
+    animation: reveal 3s forwards;
+    animation-delay: .6s;
+    opacity: 0;
+
+}
+
+#print-9 {
+    display: flex;
+    position: relative;
+    width: 15%;
+    top: -2250px;
+    left: 1300px;
+    animation: reveal 3s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+#ant {
+    display: flex;
+    position: relative;
+    width: 10%;
+    top: -1700px;
+    left: 60px;
+    animation: reveal 3s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+#dogs {
+    display: flex;
+    position: relative;
+    width: 15%;
+    top: -1750px;
+    left: 1250px;
+    animation: reveal 3s forwards;
+    animation-delay: 2.3s;
+    opacity: 0;
+}
+
+#bunny {
+    display: flex;
+    position: relative;
+    width: 12%;
+    top: -2150px;
+    left: 290px;
+    animation: reveal 3s forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
+}
 
 @keyframes reveal {
     0% {
@@ -201,4 +338,48 @@ ul.nav-links a:hover{
     100% {
        opacity: 1;
     }
+}
+
+#w-1 {
+    display: flex;
+    position: relative;
+    width: 50%;
+    left: -60px;
+    top: 20px;
+}
+
+#w-2 {
+    display: flex;
+    position: relative;
+    width: 45%;
+    left: 620px;
+    top: -20px;
+}
+
+#w-3 {
+    display: flex;
+    position: relative;
+    width: 40%;
+    left: 150px;
+    top: -300px;
+}
+
+.scoot {
+    display: flex;
+    position: relative;
+    top: -940px;
+    left: 550px;
+}
+
+.scoot-2 {
+    display: flex;
+    position: relative;
+    top: -730px;
+    left: 50px;
+}
+
+.scoot-21 {
+    display: block;
+    position: relative;
+    top: -290px;
 }
