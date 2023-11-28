@@ -14,26 +14,16 @@ h4 {
     font-size: large;
 }
 
+.bigi {
+    font-style: italic;
+}
+
 .center {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-content: center;
     justify-content: center;
-}
-
-.bigi {
-    font-style: italic;
-}
-
-.subscript {
-    font-size: smaller;
-    font-style: italic;
-}
-
-.line {
-    border-top: 1.5px solid #000;
-    padding-bottom: 30px;
 }
 
 /* reveals */
@@ -168,3 +158,12 @@ h4 {
     display: none;
     transition: 1s ease;
 }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+  }

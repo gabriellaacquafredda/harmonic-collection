@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var click1 = document.querySelector('.click-1');
     var revealContainer = document.querySelector('.reveal');
     var headerClicked = false;
+    var printPointImage = document.querySelector(".print-point-image");
 
     header.addEventListener('click', function moveHeaderUp() {
         var currentTranslate = window.getComputedStyle(header).transform.match(/matrix\(([^)]+)\)/);
@@ -23,8 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
             revealContainer.classList.remove('reveal-hidden');
 
             revealContainer.style.opacity = 0;
+
             setTimeout(function() {
                 revealContainer.style.opacity = 1;
+                printPointImage.style.opacity = 1;
                 revealContainer.classList.add('smooth');
             }, 10);
         }
@@ -123,11 +126,10 @@ var folded = new OriDomi('.paper', {
     shadingIntensity: 20,
     perspective: 800,
     maxAngle: 85,
-    shading: 'soft'
+    shading: 'soft',
 });
 
 folded.accordion(10, 'left');
-touchStartCallback = noOp
 
 // want to place text behind folded images...but z-index does not apply...need to troubleshoot
 
@@ -135,26 +137,22 @@ var folded = new OriDomi('.paper2', {
     vPanels: 5, // left/right
     hPanels: 3, // top/bottom
     speed: 500,
-    shadingIntensity: 20,
+    shadingIntensity: 5,
     perspective: 800,
     maxAngle: 85,
-    shading: 'soft'
+    shading: 'soft',
 });
 
 folded.accordion(10, 'left');
-touchStartCallback = noOp
 
 var folded = new OriDomi('.paper3', {
     vPanels: 5, // left/right
     hPanels: 3, // top/bottom
     speed: 500,
-    shadingIntensity: 20,
+    shadingIntensity: 5,
     perspective: 800,
     maxAngle: 85,
-    shading: 'soft'
+    shading: 'soft',
 });
 
 folded.accordion(10, 'left');
-touchStartCallback = noOp
-
-// running into a *ton* of issues this week. will continue to troubleshoot moving forward

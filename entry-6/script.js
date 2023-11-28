@@ -22,6 +22,12 @@ hoverDivs.forEach(function(hoverDiv) {
       console.log("yuh")
       let finalReveal = document.getElementById('final-reveal');
       finalReveal.style.setProperty('display', 'flex');
+      finalReveal.classList.add('fade-in');
+
+      setTimeout(() => {
+        finalReveal.classList.add('show');
+      }, 500); 
+
     }
     console.log(totalRevealed)
   });

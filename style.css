@@ -28,6 +28,12 @@ body {
     } 
 
 /* logo/link */
+.logo {
+    position: absolute;
+    align-items: center;
+    left: 12.7%;
+}
+
 #asterisk {
     display: flex;
     position: absolute;
@@ -37,7 +43,7 @@ body {
     left: 34.3%;
     top: 24%;
     transform-origin: center;
-    z-index: 4000;
+    z-index: 5000;
 
 }
     @keyframes spin {
@@ -304,11 +310,6 @@ body {
     100% {
        opacity: 1;
     }
-}
-.logo {
-    position: absolute;
-    align-items: center;
-    left: 12.7%;
 }
 
 /* footer */
