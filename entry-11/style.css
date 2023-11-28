@@ -1,69 +1,57 @@
 /*text standards*/
-body{
-    background-color: #E7E7D5;
-    color: #23356D;
-    font-family: dupincel-variable,serif;
+body {
+    background-color: #e7e7d5;
+    color: #23356d;
+    font-family: dupincel-variable, serif;
     line-height: 1.35;
     margin: auto;
     max-width: 1000px;
+    height: 1500px;
 }
 
-h1{
+h1 {
     font-size: 12ch;
     padding-top: 40vh;
     text-align: center;
 }
 
-h4{
+h4 {
     font-size: xx-large;
     font-style: italic;
 }
-    
-h3{
+
+h3 {
     font-size: large;
-    font-style: italic;
-    text-align: left;
 }
-    
-.h3-2{
-    margin-top: -20px;
-    text-align: center;
+
+.h3-2 {
+    padding-bottom: 10px;
 }
-  
-.h3-3{
-      margin-top: -2px;
-      text-align: right;
-}
-    
-h2{
+
+h2 {
     font-size: x-large;
     font-style: normal;
     text-align: center;
 }
-    
-i{
+
+i {
     font-style: italic;
 }
-    
-.bigi{
-    font-size: x-large;
-    font-style: italic;
-}
-    
-.subscript{
+
+.subscript {
     font-size: smaller;
-    font-style: italic; 
+    font-style: italic;
     text-align: center;
 }
-  
-.subscript2{
-      font-size: smaller;
-      font-style: italic;
-      text-align: center;
-      margin-top: -40px;
+
+.subscript2 {
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+    margin-top: -40px;
 }
-    
-.line{
+
+.line {
     border-top: 1.5px solid #000;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -81,7 +69,7 @@ i{
     cursor: pointer;
 }
 
-.header-click{
+.header-click {
     transition: transform 2s ease-in-out;
 }
 
@@ -99,9 +87,79 @@ i{
     margin-top: -50px;
 }
 
-/* cont arrow */
-#print-point {
+/* cannot get .reveal to reveal on click...very confused */
+
+/* reveal */
+.reveal {
+    width: 160px;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: opacity 1s;
+    /* Add transition property for smooth animation */
+}
+
+.reveal-hidden {
+    display: none;
+}
+
+.reveal.smooth {
+    opacity: 1;
+}
+
+.slip {
+    overflow: hidden;
+}
+
+
+/* intro-text */
+.intro-text {
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+/* gallery */
+#image-1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 100;
+}
+
+/* #tester {
+    width: 50vw;
+    height: fit-content;
+    margin-left: 150px;
+    margin-top: 30px;
+} */
+
+.paper {
+    display: flex;
+    width: 50vw;
+    height: fit-content;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.paper2 {
+    display: flex;
+    width: 50vw;
+    height: fit-content;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.gallery-title {
+    text-align: center;
+    z-index: -100;
+    padding-top: 20px;
+    /* padding-left: 300px; */
+}
+
+.gallery-text {
+    text-align: left;
+    margin-top: -20px;
+}
+
+.gallery-2 {
+    text-align: left;
+    padding-top: 30px;
 }

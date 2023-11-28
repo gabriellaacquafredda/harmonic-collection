@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ddu2wiq.css">
     <link rel="icon" href="images/PM-FC2.png" type="image/png">
+    <script src ="/entry-11/lib/oriDomi-master/oridomi.js"></script>
     <title>printed matters</title>
 </head>
 
@@ -11,16 +12,34 @@
 <body>
 <div class="big-container">
     <h1 class="header-click">making it matter</h1>
-        <h2 class="click-1"><i>an analog archive</i></h2>
+        <h2 class="click-1"><i>'pm' analog archives</i></h2>
         <canvas id="myCanvas" width="1000px" height="10px"></canvas>
-    <img id="print-point" src="images/print-point.png" alt="print-point">
+    <div class="reveal">
+        <label for="print-point"><img class="reveal" src="images/print-point.png" alt="reveal"></label>
+        <input type="checkbox" id="print-point" checked>
+        <div class="slip"></div>
+    </div>
 </div>
 
-<!-- intro -->
-<!-- <i>pm</i> is a true amalgamation of experiments.-->
-<!-- this is an ongoing personal archive of all the works/folks who are fighting the good fight to keep analog craftsmanship/written media/physical ephemera alive and well. -->
+<!-- intro text -->
+<div class="intro-text">
+    <h3>at it's core, <i>pm</i> a collection of experiments in personal philisophy and testaments to the analog arts. in my corner of the web, reader, this is pretty huge; but the web extends well beyond this corner. and the world goes even further. (and appreciation for the analog arts grows more and more obscure with every step.)</h3>&nbsp;
+    <h3>but it is out there.</h3>&nbsp;
+    <h3><i>making it matter</i> is an ongoing extension of <i>pm</i> designed to document the work of all who fight to extend the corner. as much as i love the quaintness of my space, i'd be remiss to not share the pockets of analog joy out there, and by proxy, the incredible folks/organizations who've dedicated their lives to honoring and uplifting physical ephemera.</h3>
+</div>
+
+<!-- gallery -->
+<div class="paper" id="tester"><img id="image-1" src="images/image-1.jpeg" alt="image-1"></div>
+    <div class="gallery-title"><h4>grolier club</h4></div>&nbsp;
+    <div class="gallery-text"><h3 style="text-align: center">founded in 1884, they were the first on the <i>pm</i> scene.</h3>&nbsp;
+        <p>the club is both a place and an idea. to quote it's manifesto,</p><p>penned by founder robert hoe (NYC-printing-press-manufacturer-and-bibliophile):</p>&nbsp;
+        <p>"the club exists to foster the study, collecting, and appreciation of books and works on paper, their art, history, production, and commerce. it shall pursue this mission through the maintenance of a library devoted to all aspects of the book and graphic arts and especially bibliography; through the occasional publication of books designed to illustrate, promote and encourage the book and graphic arts; through exhibitions and educational programs for its members and the general public."</p>&nbsp;
+        <p>it has emassed roughly 800 members, and is named after jean grolier, renowned 16th-century french high official and book collector, known for commissioning exquisite bindings. many of the modern exhibitions are drawn from members’ own collections, which include incunabula (books from the first half-century after the introduction of movable type in europe around 1455) and fine bindings, but also science fiction, zines, punk rock ephemera, bookmarks, valentines, and paper coffee sleeves.</p>
+    </div>
+<div class="paper2"><img id="image-2" src="images/image-2.jpeg" alt="image-2"></div>
+
 
 <!-- scripts -->
-<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 <script src="script.js"></script>
+
 </body></html>
