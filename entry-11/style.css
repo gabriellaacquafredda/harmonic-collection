@@ -115,7 +115,7 @@ i {
 .intro-text {
     display: block;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 /* gallery */
@@ -157,9 +157,19 @@ i {
 .gallery-text {
     text-align: left;
     margin-top: -20px;
+    padding-bottom: 50px;
 }
 
 .gallery-2 {
     text-align: left;
     padding-top: 30px;
 }
+
+.paper3 {
+    display: flex;
+    width: 50vw;
+    height: fit-content;
+    margin-left: 150px;
+    margin-top: 30px; 
+}
+

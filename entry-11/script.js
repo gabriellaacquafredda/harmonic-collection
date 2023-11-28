@@ -144,4 +144,17 @@ var folded = new OriDomi('.paper2', {
 folded.accordion(10, 'left');
 touchStartCallback = noOp
 
+var folded = new OriDomi('.paper3', {
+    vPanels: 5, // left/right
+    hPanels: 3, // top/bottom
+    speed: 500,
+    shadingIntensity: 20,
+    perspective: 800,
+    maxAngle: 85,
+    shading: 'soft'
+});
+
+folded.accordion(10, 'left');
+touchStartCallback = noOp
+
 // running into a *ton* of issues this week. will continue to troubleshoot moving forward
