@@ -187,14 +187,15 @@ ul.nav-links a:hover{
 
 /* print gallery */
 .print-gallery{
-    display: block;
-
+    display: flex;
+    position: relative;
 }
 
 #print-1 {
     display: none;
     position: relative;
     width: 10%;
+    height: 10%;
     top: 30px;
     left: 35px;
     animation: reveal 3s forwards;
@@ -207,8 +208,9 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 15%;
-    top: -300px;
-    left: 800px;
+    height: 15%;
+    top: -80px;
+    left: 1000px;
     animation: reveal 3s forwards;
     animation-delay: .7s;
     opacity: 0;
@@ -218,8 +220,9 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 13%;
-    top: -660px;
-    left: 950px;
+    height: 13%;
+    top: 100px;
+    left: 650px;
     animation: reveal 3s forwards;
     animation-delay: .3s;
     opacity: 0;
@@ -229,8 +232,9 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 10%;
-    top: -570px;
-    left: 400px;
+    height: 10%;
+    top: 350px;
+    left: -300px;
     animation: reveal 3s forwards;
     animation-delay: .5s;
     opacity: 0;
@@ -241,8 +245,7 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 15%;
-    top: -1000px;
-    left: 300px;
+    height: 15%;
     animation: reveal 3s forwards;
     animation-delay: .5s;
     opacity: 0;
@@ -252,9 +255,10 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 10%;
+    height: 10%;
     transform: rotate(90deg);
-    top: -950px;
-    left: 100px;
+    top: 300px;
+    left: -840px;
     animation: reveal 3s forwards;
     animation-delay: 1s;
     opacity: 0;
@@ -263,9 +267,10 @@ ul.nav-links a:hover{
 #print-7 {
     display: none;
     position: relative;
-    width: 15%;
-    top: -1400px;
-    left: 1200px;
+    width: 10%;
+    height: 10%;
+    top: 400px;
+    left: -200px;
     animation: reveal 3s forwards;
     animation-delay: 1.2s;
     opacity: 0;
@@ -275,8 +280,9 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 10%;
-    top: -1490px;
-    left: 860px;
+    height: 10%;
+    top: 280px;
+    left: 60px;
     animation: reveal 3s forwards;
     animation-delay: .6s;
     opacity: 0;
@@ -287,8 +293,7 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 15%;
-    top: -2250px;
-    left: 1300px;
+    top: 600px;
     animation: reveal 3s forwards;
     animation-delay: 1s;
     opacity: 0;
@@ -298,19 +303,22 @@ ul.nav-links a:hover{
     display: none;
     position: relative;
     width: 10%;
-    top: -1700px;
-    left: 60px;
+    height: 10%;
+    left: -1400px;
+    top: 650px;
     animation: reveal 3s forwards;
     animation-delay: 2s;
     opacity: 0;
+    z-index: 100;
 }
 
 #dogs {
     display: none;
     position: relative;
     width: 15%;
-    top: -1750px;
-    left: 1250px;
+    height: 15%;
+    top: 900px;
+    left: -450px;
     animation: reveal 3s forwards;
     animation-delay: 2.3s;
     opacity: 0;
@@ -319,9 +327,10 @@ ul.nav-links a:hover{
 #bunny {
     display: none;
     position: relative;
-    width: 12%;
-    top: -2150px;
-    left: 290px;
+    width: 10%;
+    height: 10%;
+    top: 1000px;
+    left: -1900px;
     animation: reveal 3s forwards;
     animation-delay: 1.8s;
     opacity: 0;
@@ -386,4 +395,21 @@ ul.nav-links a:hover{
     width: 60%;
     padding-top: 75px;
     left: 200px;
+}
+
+/* footer */
+footer {
+	font-size: smaller;
+	text-align: center;
+	color: #23356D;
+    margin-top: -200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+}
+
+.footer-link:hover {
+  font-style: italic;
+  color: #9D141F;
 }

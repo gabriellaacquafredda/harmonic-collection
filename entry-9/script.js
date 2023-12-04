@@ -6,6 +6,7 @@ const quillImage = document.getElementById('quill');
 const tempestImage = document.getElementById('tempest');
 const theatre2Image = document.getElementById('theatre2');
 const revealed = document.querySelector('.revealed');
+const revealed2 = document.querySelector('.revealed2');
 const h33 = document.querySelector('.h3-3');
 
 console.log(revealed)
@@ -56,7 +57,13 @@ mySpan.addEventListener("mouseenter", () => {
     revealed.style.opacity = '1';
   }, 1100);
 
-  h33.style.display = 'inline-block';
+  revealed2.style.display = 'flex';
+  revealed2.style.position = 'relative';
+  setTimeout(() => {
+    revealed2.style.opacity = '1';
+  }, 1100);
+
+  h33.style.display = 'block';
   h33.style.position = 'relative';
   setTimeout(() => {
     h33.style.opacity = '1';

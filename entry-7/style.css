@@ -300,6 +300,21 @@ ul.nav-links a:hover{
     padding-top: 500px;
 }
 
+/* continue */
+.next {
+    text-align: right;
+    font-size: small;
+  }
+  
+#nextId {
+    color: #23356D;
+}
+  
+#nextId:hover {
+    color: #9D141F;
+    font-style: italic;
+}
+
 /* footer */
 footer {
 	font-size: smaller;

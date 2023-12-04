@@ -1,3 +1,4 @@
+// growing word
 const mySpan = document.querySelector(".my-span");
 
 mySpan.addEventListener("mouseenter", () => {

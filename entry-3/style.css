@@ -71,7 +71,7 @@ div::after {
   width: 100%;
   height: 0px;
   overflow: hidden;
-  transition: height .5s ease-in-out;
+  transition: height .75s ease-in-out;
 }
 
 .slide ul {padding : 10px;}
@@ -258,6 +258,20 @@ li {
 .word-container:hover ul li {
   margin: -10px;
   transition: margin 0.8s;
+}
+
+/* continue */
+.next {
+  text-align: right;
+  font-size: small;
+}
+
+#nextId {
+  color: #23356D;
+}
+
+#nextId:hover {
+  color: #9D141F;
 }
 
 /* footer */
