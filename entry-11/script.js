@@ -1,10 +1,18 @@
-// header click (reveal)
+// initials
 document.addEventListener('DOMContentLoaded', function() {
     var header = document.querySelector('.header-click');
     var click1 = document.querySelector('.click-1');
     var revealContainer = document.querySelector('.reveal');
     var headerClicked = false;
     var printPointImage = document.querySelector(".print-point-image");
+
+    // function disableScroll() {
+    //     document.body.style.overflow = 'hidden';
+    // }
+
+    function enableScroll() {
+        document.body.style.overflow = '';
+    }
 
     header.addEventListener('click', function moveHeaderUp() {
         var currentTranslate = window.getComputedStyle(header).transform.match(/matrix\(([^)]+)\)/);
@@ -29,9 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 revealContainer.style.opacity = 1;
                 printPointImage.style.opacity = 1;
                 revealContainer.classList.add('smooth');
+                enableScroll();
             }, 10);
         }
     });
+
+    disableScroll();
+});
+
 
     // drawing the line
     const canvas = document.getElementById('myCanvas');
@@ -90,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function startLineAnimation() {
         animateLine(Date.now());
     }
-});
+
 
 // unsuccessful p5 layouts...switching over to vanilla js
 
@@ -123,7 +136,7 @@ var folded = new OriDomi('.paper', {
     vPanels: 5, // left/right
     hPanels: 3, // top/bottom
     speed: 500,
-    shadingIntensity: 20,
+    shadingIntensity: 2,
     perspective: 800,
     maxAngle: 85,
     shading: 'soft',
@@ -137,7 +150,7 @@ var folded = new OriDomi('.paper2', {
     vPanels: 5, // left/right
     hPanels: 3, // top/bottom
     speed: 500,
-    shadingIntensity: 5,
+    shadingIntensity: 2,
     perspective: 800,
     maxAngle: 85,
     shading: 'soft',
@@ -149,7 +162,7 @@ var folded = new OriDomi('.paper3', {
     vPanels: 5, // left/right
     hPanels: 3, // top/bottom
     speed: 500,
-    shadingIntensity: 5,
+    shadingIntensity: 2,
     perspective: 800,
     maxAngle: 85,
     shading: 'soft',

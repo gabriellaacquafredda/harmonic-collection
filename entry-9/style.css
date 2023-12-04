@@ -129,6 +129,80 @@ ul.nav-links a:hover{
     max-inline-size: 30%
 }
 
+/* text animtion */
+.my-span {
+    text-align: right;
+    color: #9D141F;
+}
+
+@keyframes grow {
+	0% {
+		font-size: initial;
+	}
+
+	100% {
+		font-size: xx-large;
+	}
+}
+
+.grow {
+	animation-name: grow;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+    font-style: italic;
+}
+
+#theatre {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    width: 30%;
+    margin-left: -40px;
+    margin-top: 50px;
+}
+
+#will {
+    display: none;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+    width: 20%;
+    z-index: -10;
+    margin-left: 500px;
+    margin-top: -70px;
+}
+
+#title {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    width: 20%;
+    z-index: -10;
+    margin-top: -300px;
+    margin-left: 150px;
+}
+
+#quill {
+    display: none;
+    opacity: 0;
+    transition: opacity, 2s ease-in;
+    width: 20%;
+    margin-left: 450px;
+    margin-top: -300px;
+}
+
+#tempest {
+    display: none;
+    opacity: 0;
+    transition: opacity, 1.4s ease-in;
+    width: 35%;
+    margin-left: 760px;
+    margin-top: -90px;
+}
+
+/* .contained {
+    height: 300px;
+
+} */
 /* footer */
 footer {
 	font-size: smaller;

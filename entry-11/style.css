@@ -87,15 +87,14 @@ i {
     margin-top: -50px;
 }
 
-/* cannot get .reveal to reveal on click...very confused */
-
 /* reveal */
 .reveal {
     width: 160px;
     padding-top: 20px;
     cursor: pointer;
     transition: opacity 1s;
-    /* Add transition property for smooth animation */
+    transition-delay: 2.5s;
+    /* add transition property for smooth animation */
 }
 
 .reveal-hidden {
@@ -177,3 +176,21 @@ i {
     margin-top: 30px; 
 }
 
+/* footer */
+footer {
+	font-size: smaller;
+	text-align: center;
+	color: #23356D;
+	padding-top: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+    margin-top: auto;
+
+}
+
+.footer-link:hover{
+  font-style: italic;
+  color: #9D141F;
+}
