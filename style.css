@@ -314,22 +314,18 @@ body {
 
 /* footer */
 footer {
-    font-size: smaller;
-    text-align: center;
-    color: #23356D;
-    bottom: 10px;
-  }
-  
-  .footer-link:hover{
-    font-style: italic;
-    color: #9D141F;
-  }
-  
-  .next{
-    color: #9D141F;
-  }
-  
-  .next:hover{
-    font-style: italic;
-    color: #9D141F;
-  }
+	font-size: smaller;
+	text-align: center;
+	color: #23356D;
+    margin-top: -200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    bottom: -20px;
+}
+
+.footer-link:hover {
+  font-style: italic;
+  color: #9D141F;
+}
