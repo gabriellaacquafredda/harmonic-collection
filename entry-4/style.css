@@ -231,26 +231,18 @@ ul.nav-links a:hover{
 
 #nextId:hover {
   color: #9D141F;
+  font-style: italic;
 }
 
 /* footer */
 footer {
-  font-size: smaller;
-  text-align: center;
-  color: #23356D;
-  padding-top: 10px;
+	font-size: smaller;
+	text-align: center;
+	color: #23356D;
+	padding-top: 10px;
 }
 
 .footer-link:hover{
-  font-style: italic;
-  color: #9D141F;
-}
-
-.next{
-  color: #9D141F;
-}
-
-.next:hover{
   font-style: italic;
   color: #9D141F;
 }

@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var headerClicked = false;
     var printPointImage = document.querySelector(".print-point-image");
 
-    // function disableScroll() {
-    //     document.body.style.overflow = 'hidden';
-    // }
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+    }
 
     function enableScroll() {
         document.body.style.overflow = '';

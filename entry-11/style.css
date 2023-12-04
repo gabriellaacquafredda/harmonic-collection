@@ -94,7 +94,6 @@ i {
     cursor: pointer;
     transition: opacity 1s;
     transition-delay: 2.5s;
-    /* add transition property for smooth animation */
 }
 
 .reveal-hidden {
