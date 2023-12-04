@@ -23,11 +23,6 @@ h3{
     margin-top: -20px;
     text-align: center;
 }
-  
-.h3-3{
-      margin-top: -2px;
-      text-align: right;
-}
     
 h2{
     font-size: x-large;
@@ -199,10 +194,35 @@ ul.nav-links a:hover{
     margin-top: -90px;
 }
 
-/* .contained {
-    height: 300px;
+#theatre2 {
+    display: none;
+    opacity: 0;
+    transition: opacity, 2.4s ease-in;
+    width: 25%;
+    z-index: -10;
+    margin-left: 600px;
+    margin-top: -100px;
+}
 
-} */
+.revealed {
+    display: none;
+    opacity: 0;
+    transition: opacity 2.6s ease-in;
+    z-index: 10;
+}
+
+.h3-3{
+    font-style: normal;
+    font-size: x-large;
+    display: none;
+    opacity: 0;
+    transition: opacity 2.6s ease-in;
+    width: 550px;
+    top: -170px;
+
+    z-index: 10;
+}
+
 /* footer */
 footer {
 	font-size: smaller;
@@ -214,7 +234,6 @@ footer {
     flex-direction: column;
     bottom: 10px;
     margin-top: auto;
-
 }
 
 .footer-link:hover{

@@ -4,6 +4,12 @@ const willImage = document.getElementById('will');
 const titleImage = document.getElementById('title');
 const quillImage = document.getElementById('quill');
 const tempestImage = document.getElementById('tempest');
+const theatre2Image = document.getElementById('theatre2');
+const revealed = document.querySelector('.revealed');
+const h33 = document.querySelector('.h3-3');
+
+console.log(revealed)
+console.log(h33)
 
 mySpan.addEventListener("mouseenter", () => {
   mySpan.classList.add("grow");
@@ -37,6 +43,24 @@ mySpan.addEventListener("mouseenter", () => {
   setTimeout(() => {
     tempestImage.style.opacity = '1';
   }, 400); 
+
+  theatre2Image.style.display = 'inline-block';
+  theatre2Image.style.position = 'relative';
+  setTimeout(() => {
+    theatre2Image.style.opacity = '1';
+  }, 500);
+
+  revealed.style.display = 'inline-block';
+  revealed.style.position = 'relative';
+  setTimeout(() => {
+    revealed.style.opacity = '1';
+  }, 1100);
+
+  h33.style.display = 'inline-block';
+  h33.style.position = 'relative';
+  setTimeout(() => {
+    h33.style.opacity = '1';
+  }, 1100);
 });
 
 const fontSlider = document.getElementById('fontSlider');
