@@ -300,6 +300,14 @@ ul.nav-links a:hover{
     padding-top: 500px;
 }
 
+.beep {
+    padding-top: 20px;
+}
+
+.beepbeep {
+    padding-bottom: 20px;
+}
+
 /* continue */
 .next {
     text-align: right;
