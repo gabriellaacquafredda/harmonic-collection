@@ -2,13 +2,15 @@
 body {
     background-color: #E7E7D5;
     color: #23356D;
-    font-family: dupincel-variable,serif;
+    font-family: dupincel-variable, serif;
     line-height: 1.35;
     margin: 0 auto;
+    overflow-x: hidden;
 }
-    h4 {
-        font-size: xx-large;
-    }
+
+h4 {
+    font-size: xx-large;
+}
 
 .background-fade {
     position: fixed;
@@ -18,14 +20,16 @@ body {
     height: 100%;
     animation: fadeInAnimation 1.5s forwards;
 }
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    } 
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /* logo/link */
 .logo {
@@ -46,18 +50,21 @@ body {
     z-index: 5000;
 
 }
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
-    #asterisk:hover {
+
+    100% {
         transform: rotate(360deg);
-        transition: transform 0.3s ease-in-out;
     }
+}
+
+#asterisk:hover {
+    transform: rotate(360deg);
+    transition: transform 0.3s ease-in-out;
+}
 
 /* gallery */
 #pop-1 {
@@ -298,25 +305,26 @@ body {
     animation-delay: 5s;
 }
 
-.pop-container{
+.pop-container {
     z-index: -1000;
     max-height: 3280px;
 }
 
 @keyframes reveal {
     0% {
-       opacity: 0;
+        opacity: 0;
     }
+
     100% {
-       opacity: 1;
+        opacity: 1;
     }
 }
 
 /* footer */
 footer {
-	font-size: smaller;
-	text-align: center;
-	color: #23356D;
+    font-size: smaller;
+    text-align: center;
+    color: #23356D;
     margin-top: -200px;
     position: relative;
     display: flex;
@@ -326,6 +334,6 @@ footer {
 }
 
 .footer-link:hover {
-  font-style: italic;
-  color: #9D141F;
+    font-style: italic;
+    color: #9D141F;
 }

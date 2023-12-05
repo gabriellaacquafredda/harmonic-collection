@@ -53,6 +53,13 @@ i{
       text-align: center;
       margin-top: -40px;
 }
+
+.subscript-3 {
+    padding: 30px;
+    font-size: smaller;
+    font-style: italic; 
+    text-align: center;
+}
     
 .line{
     border-top: 1.5px solid #000;
@@ -229,6 +236,40 @@ ul.nav-links a:hover{
     z-index: 10;
 }
 
+/* shakes pic */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shakes-1 {
+    display: block;
+    width: 60%;
+    justify-content: center;
+}
+
+#shakes-2 {
+    display: block;
+    width: 60%;
+    justify-content: center;
+}
+
+/* continue */
+.next {
+    text-align: right;
+    font-size: small;
+  }
+  
+#nextId {
+    color: #23356D;
+}
+  
+#nextId:hover {
+    color: #9D141F;
+    font-style: italic;
+}
+
 /* footer */
 footer {
 	font-size: smaller;
@@ -261,5 +302,4 @@ footer {
     margin-top: 30px;
     left: 250px;
     line-height: 30px;
-
 }
